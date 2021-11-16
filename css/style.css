@@ -1,0 +1,149 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Vollkorn', serif;
+
+*/
+
+/********** **********/
+
+/********** Utility Start **********/
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ font-size: 10px;
+}
+.container {
+ max-width: 95%;
+ margin: 0 auto;
+ padding: 2% 2%;
+}
+
+:root {
+ --smoke: #f5f5f5;
+ --dgray: #333;
+ --lgray: #5c5c5c;
+ --Btn-hover: #878787;
+ --footerclr: #242424;
+}
+h2 {
+ color: var(--dgray);
+ font-family: "Montserrat", sans-serif;
+}
+p {
+ color: var(--lgray);
+ font-family: "Source Sans Pro", sans-serif;
+}
+.italic {
+ color: var(--dgray);
+ font-family: "Vollkorn", serif;
+}
+button,
+a {
+ font-family: "Montserrat", sans-serif;
+}
+/********** Utility end **********/
+
+/********** Header Start **********/
+.head {
+ background-image: url("../img/bg1.jpg");
+ width: 100%;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* navbar */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ /* background-color: yellowgreen; */
+}
+
+.logo {
+ cursor: pointer;
+}
+.navbar .navlist {
+ display: flex;
+ transition: all 0.5s ease;
+}
+.navbar .navlist li {
+ list-style-type: none;
+ padding: 1rem 3rem 1rem 3rem;
+}
+.navbar .navlist li:nth-child(5) {
+ padding: 1rem 0 1rem 3rem;
+}
+
+.navbar .navlist li a {
+ text-decoration: none;
+ color: #fff;
+ font-size: 1.6rem;
+ transition: all 0.3s ease;
+ cursor: pointer;
+}
+.navbar .navlist li a:hover {
+ color: #eeeeee;
+}
+
+/* menu bar - burger */
+.navbar .menu-bar .icon {
+ color: #fff;
+ font-size: 2.6rem;
+ display: none;
+ cursor: pointer;
+}
+#click {
+ display: none;
+}
+/********** Header End **********/
+
+/********** Media Query For Mobile **********/
+@media only screen and (min-width: 200px) and (max-width: 850px) {
+ /* li */
+ .navbar .navlist li {
+  margin: 2rem;
+ }
+ /* li last child */
+ .navbar .navlist li:nth-child(5) {
+  padding: 1rem 3rem 1rem 3rem;
+ }
+
+ /* li a */
+ .navbar .navlist li a {
+  color: #222;
+ }
+ .navbar .navlist li a:hover {
+  color: var(--lgray);
+ }
+ /* navlist ul */
+ .navbar .navlist {
+  position: fixed;
+  top: 10rem;
+  right: -100%;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: hsla(0, 0%, 93%, 0.863);
+  width: 100%;
+  height: 100vh;
+ }
+
+ /* menu bar */
+ .navbar .menu-bar .icon {
+  display: block;
+ }
+ /* check box for right -100 to 0 */
+ #click:checked ~ .navlist {
+  right: 0;
+ }
+ /* check box "X" when clicked */
+ #click:checked ~ .menu-bar .icon::before {
+  content: "\f00d";
+ }
+}
