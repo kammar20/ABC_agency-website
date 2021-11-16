@@ -184,6 +184,33 @@ a {
  color: #fff;
 }
 /********** Section 1 - About End **********/
+/********** Section 2 - Status Start **********/
+.sec2 {
+ max-width: 70%;
+ margin: 0 auto;
+ padding: 5%;
+}
+.status {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ text-align: center;
+}
+
+.status .common-stat h2 {
+ margin-bottom: 1rem;
+ font-size: 42px;
+ line-height: 40px;
+ font-weight: 700;
+ letter-spacing: -3px;
+}
+.status .common-stat h5 {
+ font-size: 16px;
+ line-height: 22px;
+ font-style: italic;
+ font-weight: 400;
+}
+/********** Section 2 - Status End **********/
 
 /********** Media Query For Mobile **********/
 
@@ -252,5 +279,13 @@ a {
  }
  .block4 {
   display: none;
+ }
+
+ /* sec 2 */
+ .status {
+  flex-flow: column nowrap;
+ }
+ .status .common-stat h5 {
+  margin-bottom: 3rem;
  }
 }
