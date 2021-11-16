@@ -123,10 +123,13 @@ a {
 /********** Header End **********/
 
 /********** Section 1 - About Start **********/
+.sec1 {
+ padding: 2%;
+}
 .about {
  display: grid;
- grid-template-columns: 50% 50%;
- /* grid-template-rows: 50% 50%; */
+ grid-template-columns: 49% 49%;
+ grid-template-rows: 50% 50%;
  grid-gap: 2%;
 }
 
@@ -136,14 +139,14 @@ a {
 .about .block2,
 .about .block3 {
  background-color: var(--smoke);
- padding: 6rem;
+ padding: 2rem;
 }
 .about .common-block img {
  width: 100%;
 }
 
 .about .common-block h2 {
- margin-top: 10rem;
+ margin-top: 5rem;
  margin-bottom: 1rem;
  font-size: 42px;
  line-height: 40px;
