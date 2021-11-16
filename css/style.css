@@ -306,6 +306,82 @@ a {
 }
 /********** Section 3 - Service End **********/
 
+/*********** Section 4 - Testimonial Start ***********/
+.sec4 {
+ max-width: 70%;
+ margin: 0 auto;
+ padding: 5%;
+ text-align: center;
+}
+.testimonial h2 {
+ margin-bottom: 1rem;
+ font-size: 4.2rem;
+ line-height: 40px;
+ font-weight: 700;
+ letter-spacing: -3px;
+}
+.testimonial h5 {
+ margin-bottom: 3rem;
+ font-size: 16px;
+ line-height: 22px;
+ font-style: italic;
+ font-weight: 400;
+}
+.testimonial p {
+ /* color: var(--dgray); */
+ font-size: 20px;
+ line-height: 28px;
+ letter-spacing: -1.5px;
+}
+/*********** Section 4 - Testimonial End ***********/
+
+/*********** Section 5 - Portfolio Start ********** */
+.sec5 {
+ padding: 2%;
+}
+.portfolio {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+}
+.common-img-gallery {
+ width: 24%;
+ margin-bottom: 1.5%;
+}
+.common-img-gallery img {
+ width: 100%;
+ opacity: 0.8;
+ transition: all 0.8s ease-in-out;
+}
+.common-img-gallery img:hover {
+ opacity: 1;
+ cursor: pointer;
+ transform: scale(1.1, 1.1);
+}
+
+.common-img-gallery h2 {
+ margin-bottom: 1rem;
+ font-size: 4.2rem;
+ line-height: 40px;
+ font-weight: 700;
+ letter-spacing: -3px;
+}
+.common-img-gallery h5 {
+ margin-bottom: 3rem;
+ font-size: 16px;
+ line-height: 22px;
+ font-style: italic;
+ font-weight: 400;
+}
+.common-img-gallery p {
+ margin-bottom: 0.5rem;
+ font-size: 15px;
+ line-height: 22px;
+ font-weight: 400;
+ letter-spacing: -0.5px;
+}
+/*********** Section 5 - Portfolio End ********** */
+
 /********** Media Query For Mobile **********/
 
 @media only screen and (min-width: 200px) and (max-width: 850px) {
@@ -410,5 +486,26 @@ a {
   background-color: var(--smoke);
   padding: 2rem;
   margin-bottom: 2%;
+ }
+ /* sec 4 */
+ .testimonial p {
+  margin-bottom: 5rem;
+ }
+ /* sec 5 */
+ .portfolio {
+  flex-flow: column nowrap;
+ }
+ .common-img-gallery {
+  width: 100%;
+  /* text-align: center; */
+ }
+ .common-img-gallery img:hover {
+  opacity: 1;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transform: none;
+ }
+ .common-img-gallery p {
+  margin-bottom: 1rem;
  }
 }
