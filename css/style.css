@@ -5,8 +5,6 @@ font-family: 'Vollkorn', serif;
 
 */
 
-/********** **********/
-
 /********** Utility Start **********/
 * {
  margin: 0;
@@ -19,8 +17,6 @@ body {
  font-size: 10px;
 }
 .container {
- max-width: 95%;
- margin: 0 auto;
  padding: 2% 2%;
 }
 
@@ -39,7 +35,8 @@ p {
  color: var(--lgray);
  font-family: "Source Sans Pro", sans-serif;
 }
-.italic {
+h4,
+h5 {
  color: var(--dgray);
  font-family: "Vollkorn", serif;
 }
@@ -53,7 +50,6 @@ a {
 .head {
  background-image: url("../img/bg1.jpg");
  width: 100%;
- height: 100vh;
  background-repeat: no-repeat;
  background-size: cover;
 }
@@ -63,7 +59,6 @@ a {
  display: flex;
  justify-content: space-between;
  align-items: center;
- /* background-color: yellowgreen; */
 }
 
 .logo {
@@ -89,7 +84,7 @@ a {
  cursor: pointer;
 }
 .navbar .navlist li a:hover {
- color: #eeeeee;
+ color: #e2e2e2;
 }
 
 /* menu bar - burger */
@@ -99,12 +94,41 @@ a {
  display: none;
  cursor: pointer;
 }
+/* input click for click event */
 #click {
  display: none;
 }
+
+/* tagline */
+.tagline {
+ display: block;
+ width: 45%;
+ margin: 20rem 16rem 0 auto;
+ text-align: right;
+ color: #fff;
+ padding-bottom: 30rem;
+}
+.tagline h1 {
+ font-family: "Montserrat", sans-serif;
+ font-size: 5.6rem;
+ margin-bottom: 10px;
+}
+.tagline h4 {
+ color: #fff;
+ font-size: 1.9rem;
+ line-height: 2.2rem;
+ font-style: italic;
+ font-weight: 400;
+}
+
 /********** Header End **********/
 
+/********** Section 1 - About Start **********/
+
+/********** Section 1 - About End **********/
+
 /********** Media Query For Mobile **********/
+
 @media only screen and (min-width: 200px) and (max-width: 850px) {
  /* li */
  .navbar .navlist li {
