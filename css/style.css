@@ -146,7 +146,7 @@ a {
 }
 
 .about .common-block h2 {
- margin-top: 5rem;
+ margin-top: 12rem;
  margin-bottom: 1rem;
  font-size: 42px;
  line-height: 40px;
@@ -240,5 +240,17 @@ a {
 
  .tagline h1 {
   font-size: 4rem;
+ }
+
+ /* sec1 */
+ .about {
+  display: block;
+ }
+ .about .block2,
+ .about .block3 {
+  margin: 2% 0;
+ }
+ .block4 {
+  display: none;
  }
 }
