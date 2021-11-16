@@ -120,11 +120,66 @@ a {
  font-style: italic;
  font-weight: 400;
 }
-
 /********** Header End **********/
 
 /********** Section 1 - About Start **********/
+.about {
+ display: grid;
+ grid-template-columns: 50% 50%;
+ /* grid-template-rows: 50% 50%; */
+ grid-gap: 2%;
+}
 
+.about .common-block {
+ text-align: center;
+}
+.about .block2,
+.about .block3 {
+ background-color: var(--smoke);
+ padding: 6rem;
+}
+.about .common-block img {
+ width: 100%;
+}
+
+.about .common-block h2 {
+ margin-top: 10rem;
+ margin-bottom: 1rem;
+ font-size: 42px;
+ line-height: 40px;
+ font-weight: 700;
+ letter-spacing: -3px;
+}
+.about .common-block h5 {
+ margin-bottom: 3rem;
+ font-size: 16px;
+ line-height: 22px;
+ font-style: italic;
+ font-weight: 400;
+}
+
+.about .common-block p {
+ font-size: 15px;
+ line-height: 22px;
+ font-weight: 400;
+ letter-spacing: -0.5px;
+ margin-bottom: 3rem;
+}
+.btn {
+ display: inline-block;
+ padding: 1.5rem 3.5rem;
+ border: 2px solid #000;
+ background-color: transparent;
+ transition: all 500ms ease;
+ color: var(--dgray);
+ font-size: 1.2rem;
+ letter-spacing: -1px;
+}
+.btn:hover {
+ border-color: var(--Btn-hover);
+ background-color: var(--Btn-hover);
+ color: #fff;
+}
 /********** Section 1 - About End **********/
 
 /********** Media Query For Mobile **********/
