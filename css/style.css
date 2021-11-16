@@ -211,10 +211,109 @@ a {
  font-weight: 400;
 }
 /********** Section 2 - Status End **********/
+/********** Section 3 - Service Start **********/
+.sec3 {
+ padding: 2%;
+}
+
+/* two service box */
+.service {
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+ margin-bottom: 2%;
+}
+
+.box1,
+.box2 {
+ width: 49%;
+}
+.service img {
+ width: 100%;
+}
+.box2 {
+ background-color: var(--smoke);
+ padding: 2rem;
+}
+
+.box2 h2 {
+ margin-top: 10rem;
+ margin-bottom: 1rem;
+ font-size: 42px;
+ line-height: 40px;
+ font-weight: 700;
+ letter-spacing: -3px;
+}
+.box2 h5 {
+ margin-bottom: 3rem;
+ font-size: 16px;
+ line-height: 22px;
+ font-style: italic;
+ font-weight: 400;
+}
+
+.box2 p {
+ font-size: 15px;
+ line-height: 22px;
+ font-weight: 400;
+ letter-spacing: -0.5px;
+ margin-bottom: 3rem;
+}
+
+/* 3 box with icon */
+.box-with-icon {
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+}
+.box-common {
+ width: 32%;
+ background-color: var(--smoke);
+ padding: 2rem;
+}
+.box3,
+.box4,
+.box5 {
+ transition: all 0.75s ease 0s, opacity 750ms ease 0s, transform 750ms ease 0s;
+}
+.box3:hover {
+ background-color: #e3e1d3;
+}
+.box4:hover {
+ background-color: #e0cece;
+}
+.box5:hover {
+ background-color: #d1d7e0;
+}
+.box-common .icon {
+ font-size: 8rem;
+ color: var(--dgray);
+ margin-bottom: 3rem;
+}
+.box-common h2 {
+ margin-bottom: 1rem;
+ font-size: 42px;
+ line-height: 40px;
+ font-weight: 700;
+ letter-spacing: -3px;
+}
+.box-common p {
+ margin-bottom: 1rem;
+ font-size: 15px;
+ line-height: 22px;
+ font-weight: 400;
+ letter-spacing: -0.5px;
+}
+/********** Section 3 - Service End **********/
 
 /********** Media Query For Mobile **********/
 
 @media only screen and (min-width: 200px) and (max-width: 850px) {
+ /* button */
+ .btn {
+  margin-bottom: 2rem;
+ }
+
  /* li */
  .navbar .navlist li {
   margin: 2rem;
@@ -287,5 +386,29 @@ a {
  }
  .status .common-stat h5 {
   margin-bottom: 3rem;
+ }
+
+ /* sec3 */
+ /* service 2 box */
+ .service {
+  flex-flow: column nowrap;
+ }
+ .box1,
+ .box2 {
+  width: 100%;
+ }
+ .service img {
+  margin-bottom: 2%;
+ }
+
+ /* 3 box with icon */
+ .box-with-icon {
+  flex-flow: column nowrap;
+ }
+ .box-common {
+  width: 100%;
+  background-color: var(--smoke);
+  padding: 2rem;
+  margin-bottom: 2%;
  }
 }
