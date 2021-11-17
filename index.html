@@ -19,7 +19,7 @@
  </head>
  <body>
   <!-- ********** Header Start ********** -->
-  <header class="head">
+  <header id="head" class="head">
    <div class="container">
     <!-- navbar -->
     <nav class="navbar">
@@ -31,11 +31,11 @@
       <i class="fas fa-bars icon"></i>
      </label>
      <ul class="navlist">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">SERVICE</a></li>
-      <li><a href="#">PORTFOLIO</a></li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="#head">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#service">SERVICE</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
      </ul>
     </nav>
     <!-- tagline -->
@@ -50,7 +50,7 @@
   <!--********** Section 1 - About Start **********-->
 
   <section class="sec1">
-   <div class="about">
+   <div id="about" class="about">
     <div class="block1 common-block">
      <img src="./img/pic1.jpeg" alt="" />
     </div>
@@ -64,7 +64,9 @@
       disruptive user experience iPad social media angel investor alpha. Social
       proof lean startup alpha scrum project non-disclosure agreement.
      </p>
-     <button class="btn">VIEW PORTFOLIO</button>
+     <a href="#portfolio"
+      ><button class="btn" type="button">VIEW PORTFOLIO</button>
+     </a>
     </div>
     <div class="block3 common-block">
      <h2>Hip & Funky</h2>
@@ -76,7 +78,9 @@
       disruptive user experience iPad social media angel investor alpha. Social
       proof lean startup alpha scrum project non-disclosure agreement.
      </p>
-     <button class="btn">VIEW PORTFOLIO</button>
+     <a href="#portfolio"
+      ><button class="btn" type="button">VIEW PORTFOLIO</button>
+     </a>
     </div>
     <div class="block4 common-block">
      <img src="./img/pic2.jpeg" alt="" />
@@ -110,7 +114,7 @@
   <!--********** Section 2 - status End **********-->
 
   <!--********** Section 3 - Service Start **********-->
-  <section class="sec3">
+  <section id="service" class="sec3">
    <div class="service">
     <div class="box1">
      <img src="./img/pic3.jpeg" alt="" />
@@ -125,7 +129,10 @@
       disruptive user experience iPad social media angel investor alpha. Social
       proof lean startup alpha scrum project non-disclosure agreement.
      </p>
-     <button class="btn">GET IN TOUCH</button>
+
+     <a href="#contact"
+      ><button class="btn" type="button">GET IN TOUCH</button>
+     </a>
     </div>
    </div>
 
@@ -182,7 +189,7 @@
   <!--********** Section 4 - Testimonial End **********-->
 
   <!--********** Section 5 - Portfolio Start **********-->
-  <section class="sec5">
+  <section id="portfolio" class="sec5">
    <div class="portfolio">
     <div class="img-gallery-1 common-img-gallery">
      <h2>
@@ -220,5 +227,77 @@
    </div>
   </section>
   <!--********** Section 5 - Portfolio End **********-->
+
+  <!--********** Section 6 - Contact Start **********-->
+  <section id="contact" class="sec6">
+   <h2>Write us a letter</h2>
+   <h5>We appreciate you ideas</h5>
+   <form action="#">
+    <label for="name" class="label">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" />
+
+    <label for="email" class="label">Email Address</label>
+    <input
+     type="email"
+     name="email"
+     id="email"
+     placeholder="Enter your email address"
+    />
+
+    <label for="message" class="label">Message</label>
+    <textarea
+     name="message"
+     id="message"
+     rows="10"
+     placeholder="Example Text"
+    ></textarea>
+   </form>
+   <button class="btn" type="submit">SUBMIT</button>
+  </section>
+  <!--********** Section 6 - Contact End **********-->
+
+  <!--********** Section 7 - Footer Start **********-->
+  <footer class="foot">
+   <div class="footer-sec">
+    <div class="logo-f common-foot">
+     <img src="./img/logo.png" alt="" width="90" />
+    </div>
+    <div class="menu common-foot">
+     <h6>MENU</h6>
+     <a href="#about">ABOUT</a>
+     <a href="#service">SERVICE</a>
+     <a href="#portfolio">PORTFOLI</a>
+     <a href="#contact">CONTACT</a>
+    </div>
+    <div class="address common-foot">
+     <h6>ADDRESS</h6>
+     <p>
+      Suite #913 <br />
+      Corporation Building <br />
+      Tibb Street <br />
+      Manchester <br />
+      M1 1TA <br />
+     </p>
+    </div>
+    <div class="contact common-foot">
+     <h6>CONTACT</h6>
+     <p>
+      E: info(at)youragency.com <br />
+      T: +44 800 123 456 <br />
+      F: +44 800 123 400 <br />
+     </p>
+    </div>
+   </div>
+  </footer>
+  <!--********** Section 7 - Footer End **********-->
+
+  <!--********** Javascript For Navbar Scroll **********-->
+  <script type="text/javascript">
+   window.addEventListener("scroll", function () {
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("sticky", window.scrollY > 0);
+   });
+  </script>
+  <!--********** Javascript For Navbar Scroll **********-->
  </body>
 </html>
